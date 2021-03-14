@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Collections;
+using System.Collections.Generic;
 namespace Problem6_Address_Book
 {
     class Program
@@ -23,6 +24,25 @@ namespace Problem6_Address_Book
             long PhoneNumber = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Enter Email:");
             string Email = Console.ReadLine();
+
+            ArrayList list = new ArrayList();
+            list.Add(FirstName);
+            list.Add(LastName);
+            list.Add(Address);
+            list.Add(City);
+            list.Add(State);
+            list.Add(Zip);
+            list.Add(PhoneNumber);
+            list.Add(Email);
+
+            
+
+            //Console.WriteLine("Added item in is {0}", list);
+
+            foreach (var i in list )
+                {
+                Console.WriteLine(i);
+                }
 
 
 
